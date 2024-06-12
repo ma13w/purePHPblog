@@ -1,7 +1,7 @@
 <?php
 
 $request_uri = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : null;
-$folder =  '/phpfiles/EasyPHPBlog/';
+$folder =  '/';
 $viewDir = '/php/';
 $request_uri = str_replace($folder, '', $request_uri);
 
