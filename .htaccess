@@ -1,0 +1,13 @@
+# DISCLAIMER
+# Put this file in the "htdocs" folder of the APACHE server
+# If you do not use APACHE, you will have to adapt the file to your server.
+
+<IfModule mod_rewrite.c>
+    Options -Indexes 
+    RewriteEngine On
+    RewriteBase /
+    RewriteRule ^index\.php$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule . index.php [L,QSA]
+</IfModule>
