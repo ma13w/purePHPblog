@@ -1,0 +1,55 @@
+.intro-posts h2{
+    margin-left: -98%;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+.intro-posts h2:first-child {
+    margin-top: 0;
+}
+.blog-search{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+.blog-search-input-hidden{
+    width: 0% !important;  
+    background-color: transparent !important;
+}
+.blog-search input{
+    padding: 15px 16px;
+    width: 90%;
+    border-radius: 4px;
+    background: #3f3947;
+    color: var(--purple-color);
+    border: 0;
+    color: var(--purple-color);
+    font-size: 16px;
+
+    transition: width 0.6s ease;
+}
+.blog-search input:focus {
+    outline: none;
+    box-shadow: 0 1px 6px 0 var(--gray-color);
+}
+.blog-search input::placeholder{
+    color: var(--purple-color);
+    font-size: 16px;
+}
+
+#searchBtn{
+    transition: right 0.7s ease;
+}
+.active-search{
+    right: 8% !important;
+}
+.none-search{
+    position: absolute;
+    right: 48.2%;
+
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}

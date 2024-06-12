@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Roboto", sans-serif;
+}
+
+h1{
+    font-size: 2em;
+    margin: 0.67em 0;
+    color: var(--white-color);
+}
+h2{
+    font-size: 1.5em;
+    margin: 0.83em 0;
+    color: var(--white-color);
+}
+
+.blog-date{
+    margin: 1em 0;
+    color: var(--gray-color);
+    font-size: 18px;
+}
+.blog-tags{
+    display: flex;
+    gap: 2px;
+    margin-bottom: 45px;
+}
+.blog-tag{
+    font-size: 14px;
+    padding: 6px 12px;
+    background-color: transparent;
+    border-radius: 5px;
+    color: var(--white-color);
+    border: 1.5px solid var(--white-color);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.blog-tag:hover{
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+
+.blog-menu{
+    position: absolute;
+    top: 250px;
+    right: 20%;
+
+    font-size: 14px;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: none;
+}
+.blog-menu-ontop{
+    position: fixed;
+    top: 10px;
+    right: 20%;
+}
+.blog-menu a{
+    margin-top: 12px;
+    text-decoration: none;
+    color: var(--white-color);
+}
+.blog-menu a:hover{
+    text-decoration: none;
+    color: var(--purple-color);
+}
+.blog-menu-h3{
+    padding-left: 10px;
+}

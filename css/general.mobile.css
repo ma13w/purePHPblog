@@ -1,0 +1,151 @@
+@media (max-width: 992px) {
+/* navbar */
+body{
+    position: relative;
+}
+.nav-container{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.nav-toggle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px 0;
+    fill: var(--white-color);
+
+    background-color: var(--black-color);
+    opacity: 0.9;
+}
+.navbar{
+    opacity: 0.99;
+
+    display: none;
+
+    position: fixed;
+    top: 84px;
+
+    background-color: var(--black-color);
+    border-top: 1.5px solid var(--purple-color);
+    border-bottom: 1.5px solid var(--purple-color);
+
+    width: 100%;
+    padding: 30px 0;
+
+    flex-direction: column;
+    gap: 20px;
+
+    z-index: 999;
+}
+.active{
+    display: flex;
+}
+.hide{
+    opacity: 0;
+    transition: opacity 1s;
+}
+.navbar a{
+    /* display: none; */
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: cascade-in 1s forwards
+}
+@keyframes cascade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* posts */
+.mobile-blog{
+    width: 80%;
+}
+.intro-posts h2{
+    margin-left: 0;
+}
+.post{
+    flex-direction: column;
+}
+.post-title{
+    width: 100%;
+    text-align: left;
+}
+.post-date{
+    width: 100%;
+    text-align: left;
+    color: var(--gray-color);
+}
+.post-description{
+    display: none;
+}
+
+/* about */
+.about-text{
+    padding: 0 !important;
+}
+.mobile-about{
+    width: 80%;
+}
+
+/* viewer */
+.blog-menu{
+    display: none;
+}
+.blog-content{
+    width: 94%;
+}
+.container{
+    margin-top: 94px; /* adjustment for the navbar */
+    padding-bottom: 30px;
+}
+.mobile-viewer{
+    width: 94%;
+}
+
+/* admin */
+.mobile-admin{
+    width: 80%;
+}
+.mobile-admin-panel{
+    width: 100%;
+}
+.admin-new{
+    width: 100%;
+}
+.input-container{
+    width: 270px;
+}
+.admin-stats{
+    width: 94%;
+}
+.admin-panel-post-list{
+    padding: 30px 0;
+}
+.admin-post-title, .admin-post-date, .admin-post-views{
+    color: var(--white-color);
+}
+.admin-post-title{
+    width: 40%;
+} 
+.admin-post-date{
+    width: 30%;
+} 
+.admin-post-views{
+    text-align: center;
+}
+.admin-post{
+    flex-direction: row;
+}
+.input-container a{
+    width: 100%;
+}
+
+}

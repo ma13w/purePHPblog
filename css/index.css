@@ -1,0 +1,101 @@
+.container-introduction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+
+    width: 100%;
+}
+.container-introduction h1{
+    transition: letter-spacing 0.3s;
+}
+
+.intro-header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.container-introduction h1{
+    transition: text-shadow 0.3s ease-in !important;
+    text-shadow: none;
+}
+.intro-img img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.intro-description{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.social-icons{    
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+}
+.social-icons svg{
+    width: 24px;
+    height: auto;
+    fill: var(--white-color);
+}
+.social-icons a:hover svg{
+    fill: var(--purple-color);
+}
+
+.intro-posts{
+    width: 100%;
+
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    flex-direction: column;
+
+    gap: 30px;
+}
+.posts-list{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 15px;
+    gap: 15px;
+    width: 100%;
+}
+.post{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    cursor: pointer;
+}
+.post:hover .post-title{
+    color: var(--purple-color);
+}  
+.post-title{
+    width: 40%;
+}
+.post-date, .post-views{
+    width: 30%;
+    text-align: right;
+}
+.post-description{
+    width: 95%;
+    margin-bottom: 15px;
+    margin-top: -5px;
+}
+
+.outer-glow{
+    text-shadow: var(--white-color) 1px 1px 10px, var(--gray-color) 1px 1px 1px !important;
+}
